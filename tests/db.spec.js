@@ -1,3 +1,6 @@
+if (typeof TextEncoder === 'undefined') {
+  global.TextEncoder = require('util').TextEncoder;
+}
 require('dotenv').config();
 
 const { rebuildDB } = require('../db/seed_data');
