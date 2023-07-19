@@ -10,7 +10,7 @@ const {
     closeReport,
     createReportComment
 } = require('../db');
-const e = require('express');
+
 
 /**
  * Set up a GET request for /reports
