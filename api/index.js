@@ -20,7 +20,7 @@ const {
  * - on success, it should send back an object like { reports: theReports }
  * - on caught error, call next(error)
  */
-apiRouter.get('/reports', async (req, res, next)=> {
+apiRouter.get('/reports', async (req, res, next, err)=> {
     try{
         const theReports = await getOpenReports();
         if(theReports){
